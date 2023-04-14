@@ -19,12 +19,6 @@ variable "privatedb_subnet" {
   default     = ["10.10.96.0/19", "10.10.224.0/19"]
   description = "private subnet for Database servers"
 }
-#variable "nat_gw" {
-  #type        = string
-  #default     = public_subnets_cidr
-  #description = "description"
-#}
-
 variable "azs" {
   type    = list(any)
   default = ["us-east-1a", "us-east-1b", "us-east-1c"]
