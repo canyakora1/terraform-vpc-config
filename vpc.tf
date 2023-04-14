@@ -55,7 +55,4 @@ resource "aws_route_table_association" "a" {
   route_table_id = aws_route_table.public_cloudboot_rt.id
 }
 # Create a Nat Gateway
-resource "aws_nat_gateway" "dcg_nat_gw" {
-  connectivity_type = "private"
-  subnet_id         = aws_subnet.private_test1[count.index]
-}
+
